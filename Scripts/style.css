@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins",sans-serif;
+  border: none;
+  outline: none;
+}
+
+body{
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100hv;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.head{
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  top: 0;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(10px);
+  z-index: 100;
+}
+
+header a{
+  color: white;
+}
+
+nav a{
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.logo{
+  color: aqua;
+  margin: 0 2rem 0 0;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.body-content{
+  font-size: 100%;
+  margin-top: 300px;
+  margin-left: 5%; 
+  width: 50%;
+  justify-content: space-between;
+}
+
+.body-content h1{
+  margin: auto;
+  font-size: 2.5rem;
+}
+
+.body-content h3{
+    font-size: 2.5rem;
+}
+span{
+  color: aqua;
+}
+
+.icon-img{
+  width: auto;
+  height: 70%;
+  /*border-radius: 50%;*/
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+/*This animations i took from a youtube tutorial*/
+  nav.active{
+    display: block;
+  }
+  nav a{
+    font-size: 1.5rem;
+  }
+  
+  nav a:hover,
+  nav a.active{
+    padding: 5px;
+    border-radius: 3px;
+    border-bottom: 3px solid aqua;
+    color: aqua;
+    text-shadow: 0 0 6px aqua;
+  }
+
+
+.typing-text{
+  font-size: 34x;
+  font-weight: 400;
+  min-width: 250px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+    content: "Software Developer";
+    color: aqua;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+  height: 100%;
+    border-left: 3px solid aqua;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 3px solid black;
+  } 
+}
+
+@keyframes words{
+  0%, 20%{
+    content: "Bread"
+  }
+
+  21%, 40%{
+    content: "Pudding"
+  }
+  41%, 60%{
+    content: "Programming Cafeteria"
+  }
+  41%, 60%{
+    content: "Café"
+  }
+  41%, 60%{
+    content: "Bacon"
+  }
+}
+
+
+.social-icons{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.social-icons i{
+    color: white;
+    transition: 0.1s ease;
+}
+
+.social-icons i:hover{
+    color: aqua;
+}
