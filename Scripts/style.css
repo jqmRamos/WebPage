@@ -74,7 +74,6 @@ span{
 .icon-img{
   width: auto;
   height: 70%;
-  /*border-radius: 50%;*/
   position: fixed;
   bottom: 0;
   right: 0;
@@ -101,8 +100,6 @@ span{
 
 
 .typing-text{
-  font-size: 34x;
-  font-weight: 400;
   min-width: 250px;
 }
 
@@ -121,9 +118,8 @@ span{
     background-color: transparent;
     position: absolute;
     width: calc(100% + 8px);
-  height: 100%;
+    height: 100%;
     border-left: 3px solid aqua;
-    right: -8;
     animation: cursor 0.6s infinite;
 }
 
@@ -132,26 +128,6 @@ span{
     border-left: 3px solid black;
   } 
 }
-
-@keyframes words{
-  0%, 20%{
-    content: "Bread"
-  }
-
-  21%, 40%{
-    content: "Pudding"
-  }
-  41%, 60%{
-    content: "Programming Cafeteria"
-  }
-  61%, 80%{
-    content: "Femboy?"
-  }
-  81%, 100%{
-    content: "Bacon"
-  }
-}
-
 
 .social-icons{
     position: fixed;
@@ -179,4 +155,34 @@ span{
 
 .social-icons i:hover{
     color: aqua;
+}
+
+
+
+.tech-icons{
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tech-icons a{
+    display: inline-flex;
+    justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+}
+
+.tech-icons i{
+    color: white;
+    transition: 0.1s ease;
+}
+
+
+.tech-icons i:hover{
+  color: aqua
+
 }
